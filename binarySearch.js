@@ -22,10 +22,12 @@ function bisect_left(a_list, target) {
    return first;
 }
 
-(function main() {
+function main() {
     let collection = [1, 2, 4, 8, 10, 34, 45, 51, 53];
 
     // Call the method bisect_left
     let result = bisect_left.apply(null, [collection, 80]);
     console.log("Result: ", result);
-})();
+};
+
+module.exports = bisect_left;
